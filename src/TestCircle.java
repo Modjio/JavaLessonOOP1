@@ -16,7 +16,8 @@ public class TestCircle {
         System.out.println("Площадь круга с радиусом " + circle3.radius + " равна " + circle3.getArea());
 
         // Изменить радиус круга
-        circle2.radius = 100; // или circle2.setRadius(100)
+        circle2.radius = 100; // или        circle2.setRadius(100);
         System.out.println("Площадь круга с радиусом " + circle2.radius + " равна " + circle2.getArea());
+
     }
 }

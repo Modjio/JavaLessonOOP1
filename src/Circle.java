@@ -1,7 +1,7 @@
 // Определение класса круга с двумя конструкторами
 class Circle {
-    static int numberOfObjects = 0; // количество созданных объектов
-    double radius;
+    private static int numberOfObjects = 0; // количество созданных объектов
+    private double radius;
 
     /**
      * Создает круг с радиусом, равным 1
@@ -37,7 +37,14 @@ class Circle {
      * Присваивает новый радиус этому кругу
      */
     void setRadius(double newRadius) {
-        radius = newRadius;
+        radius = (newRadius >= 0) ? newRadius : 0;
+    }
+
+    /**
+     * Возвращает радиус
+     */
+    double getRadius() {
+        return radius;
     }
 
     /**
